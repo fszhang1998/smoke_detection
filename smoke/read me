@@ -1,0 +1,11 @@
+环境要求：手写识别等经典例子必备的python，pytorch，anaconda，cuda以外，想要测试还需要用到opencv：
+（pip install -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python）
+用的是清华的镜像源，安装比较快
+
+同样是以项目的形式打开文件夹，文件夹中包含了已经训练好的模型，因此可以直接进行测试，也可以把‘resnet18_50.pth’删掉，
+运行trian重新生成
+
+train可以直接运行，test需要改变测试集的路径（line：10），路径可以通过在外部右键查看文件属性获得，
+路径前加r可以避免\t被识别为转义字符
+
+test_img内包含了多个测试集，可以任选其一进行测试
